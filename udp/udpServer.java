@@ -5,7 +5,6 @@ import java.net.*;
 
 public class udpServer {
     public static void main(String[] agrs) throws Exception {
-
         Scanner sc = new Scanner(System.in);
         DatagramSocket skt = new DatagramSocket(38880);
         System.out.println("SERVER IS READY...");
@@ -14,13 +13,12 @@ public class udpServer {
             DatagramPacket recv = new DatagramPacket(bufferRecv, bufferRecv.length);
             skt.receive(recv);
             String msg = new String(recv.getData());
-            System.out.println("Client " + msg);
-            System.out.println("Server: ");
+            System.out.println("Client sent : " + msg);
+            System.out.println("Message to send to client: ");
             String m = sc.nextLine();
             byte bufferSend[] = m.getBytes();
             DatagramPacket sent = new DatagramPacket(bufferSend, bufferSend.length, recv.getAddress(), recv.getPort());
             skt.send(sent);
         }
-
     }
 }

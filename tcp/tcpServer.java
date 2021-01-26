@@ -7,7 +7,6 @@ public class tcpServer {
     public static void main(String[] args) throws Exception {
         ServerSocket sersock = new ServerSocket(4000);
         System.out.println("Server ready for connection");
-
         Socket sock = sersock.accept();
         System.out.println("Connection Is successful and waiting for chatting");
         InputStream istream = sock.getInputStream();
