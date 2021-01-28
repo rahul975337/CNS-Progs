@@ -1,4 +1,4 @@
-package tcp;
+package partB.tcp;
 
 import java.net.*;
 import java.io.*;

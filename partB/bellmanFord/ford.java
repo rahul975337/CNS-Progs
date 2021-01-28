@@ -1,4 +1,4 @@
-package bellmanFord;
+package partB.bellmanFord;
 
 import java.util.Scanner;
 
@@ -26,6 +26,8 @@ public class ford {
                     }
                 }
             }
+
+            
         }
         if (!negativeCycle) {
             for (int vertex = 1; vertex <= num_ver; vertex++) {

@@ -1,4 +1,4 @@
-package leakybucket;
+package partB.leakybucket;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package udp;
+package partB.udp;
 
 import java.util.*;
 import java.net.*;

@@ -1,4 +1,4 @@
-package rsa;
+package partB.rsa;
 
 import java.util.Scanner;
 
